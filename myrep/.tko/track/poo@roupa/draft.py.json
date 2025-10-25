@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-07_19-11-31",
+            "content": "class Roupa:\n    def __init__(self):\n        self.__tamanho: str = \"\"\n    \n    def getTamanho(self):\n        return self.__tamanho\n    \n    def setTamanho(self, tamanho: str):\n        if tamanho != \"PP\" \\\n            and tamanho != \"P\" \\\n            and tamanho != \"M\" \\\n            and tamanho != \"G\" \\\n            and tamanho != \"GG\" \\\n            and tamanho != \"XG\":\n            print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\n            return\n        \n        self.__tamanho = tamanho\n\n    def __str__(self) -> str:\n        return f\"size: ({self.getTamanho()})\"\n\nroupa = Roupa()\n\nwhile True:\n    command = input()\n    print(\"$\" + command)\n    args = command.split()\n\n    if args[0] == \"end\":\n        break\n    elif args[0] == \"show\":\n        print(roupa)\n    elif args[0] == \"size\":",
+            "lines": "34"
+        }
+    ]
+}

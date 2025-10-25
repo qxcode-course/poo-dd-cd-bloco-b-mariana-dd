@@ -1,0 +1,26 @@
+version: '0.2'
+sources:
+- database: local
+  link: ''
+  cache_path: ''
+  cache_timestamp: ''
+  filters: null
+- database: poo
+  link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
+  cache_path: /workspaces/poo-dd-cd-bloco-b-mariana-dd/myrep/.tko/cache/poo.md
+  cache_timestamp: '2025-10-07 19:00:08'
+  filters:
+  - acesso
+  - simples
+expanded:
+- poo@campanha-principal
+- poo@bloco_b-modificadores-de-acesso
+tasks: {}
+flags:
+  quests: 0
+  tracks: 0
+  tasks: 0
+  graph: 1
+  xray: 0
+lang: py
+selected: poo@campanha-principal
