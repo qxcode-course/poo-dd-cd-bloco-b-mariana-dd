@@ -26,3 +26,48 @@
 2025-10-27 19:49:00, SELF, v:1, k:poo@grafite, rate:100, iagen:__, alone:5, study:200
 2025-10-27 19:49:02, MOVE, v:1, k:poo@grafite, mode:PICK
 2025-10-27 19:49:07, MOVE, v:1, k:poo@grafite, mode:BACK
+2025-10-27 19:50:29, MOVE, v:1, k:poo@motouber, mode:DOWN
+2025-10-27 19:51:45, SELF, v:1, k:poo@grafite, rate:100, iagen:__, alone:6, study:200
+2025-10-27 19:53:05, MOVE, v:1, k:poo@motouber, mode:PICK
+2025-10-27 19:53:05, EXEC, v:1, k:poo@motouber, mode:FULL, rate:0, size:0
+2025-10-27 19:53:07, MOVE, v:1, k:poo@motouber, mode:BACK
+2025-10-27 21:23:53, MOVE, v:1, k:poo@motouber, mode:PICK
+2025-10-27 21:23:54, EXEC, v:1, k:poo@motouber, mode:FULL, rate:0, size:1
+2025-10-27 21:23:55, MOVE, v:1, k:poo@motouber, mode:BACK
+2025-10-27 21:37:52, MOVE, v:1, k:poo@motouber, mode:PICK
+2025-10-27 21:37:52, EXEC, v:1, k:poo@motouber, mode:FULL, rate:0, size:36
+2025-10-27 21:37:54, MOVE, v:1, k:poo@motouber, mode:BACK
+2025-10-27 21:43:07, MOVE, v:1, k:poo@motouber, mode:PICK
+2025-10-27 21:43:07, EXEC, v:1, k:poo@motouber, mode:FULL, rate:0, size:43
+2025-10-27 21:43:09, MOVE, v:1, k:poo@motouber, mode:BACK
+2025-10-27 21:56:53, MOVE, v:1, k:poo@motouber, mode:PICK
+2025-10-27 21:56:53, EXEC, v:1, k:poo@motouber, mode:FULL, rate:0, size:57
+2025-10-27 21:56:55, MOVE, v:1, k:poo@motouber, mode:BACK
+2025-10-27 22:16:03, MOVE, v:1, k:poo@motouber, mode:PICK
+2025-10-27 22:16:04, EXEC, v:1, k:poo@motouber, mode:FULL, rate:0, size:68
+2025-10-27 22:16:06, MOVE, v:1, k:poo@motouber, mode:BACK
+2025-10-27 22:51:55, MOVE, v:1, k:poo@motouber, mode:PICK
+2025-10-27 22:51:55, EXEC, v:1, k:poo@motouber, mode:FULL, rate:0, size:109
+2025-10-27 22:51:56, EXEC, v:1, k:poo@motouber, mode:FULL, rate:0
+2025-10-27 22:51:59, MOVE, v:1, k:poo@motouber, mode:BACK
+2025-10-27 22:52:08, MOVE, v:1, k:poo@motouber, mode:PICK
+2025-10-27 22:52:08, EXEC, v:1, k:poo@motouber, mode:FULL, rate:0
+2025-10-27 22:52:49, EXEC, v:1, k:poo@motouber, mode:FULL, rate:0, size:109
+2025-10-27 22:52:50, EXEC, v:1, k:poo@motouber, mode:FULL, rate:0
+2025-10-27 22:52:50, EXEC, v:1, k:poo@motouber, mode:FULL, rate:0
+2025-10-27 22:53:05, EXEC, v:1, k:poo@motouber, mode:FULL, rate:0
+2025-10-27 22:54:12, EXEC, v:1, k:poo@motouber, mode:FULL, rate:0, size:109
+2025-10-27 22:54:34, EXEC, v:1, k:poo@motouber, mode:FULL, rate:0, size:109
+2025-10-27 22:54:43, MOVE, v:1, k:poo@motouber, mode:BACK
+2025-10-27 22:58:22, MOVE, v:1, k:poo@motouber, mode:PICK
+2025-10-27 22:58:23, EXEC, v:1, k:poo@motouber, mode:FULL, rate:0
+2025-10-27 22:59:22, EXEC, v:1, k:poo@motouber, mode:FULL, rate:87, size:93
+2025-10-27 22:59:33, MOVE, v:1, k:poo@motouber, mode:BACK
+2025-10-27 22:59:44, MOVE, v:1, k:poo@motouber, mode:PICK
+2025-10-27 22:59:44, EXEC, v:1, k:poo@motouber, mode:FULL, rate:87
+2025-10-27 23:01:03, MOVE, v:1, k:poo@motouber, mode:BACK
+2025-10-27 23:02:32, MOVE, v:1, k:poo@motouber, mode:PICK
+2025-10-27 23:02:32, EXEC, v:1, k:poo@motouber, mode:FULL, rate:100, size:100
+2025-10-27 23:04:33, MOVE, v:1, k:poo@motouber, mode:BACK
+2025-10-27 23:08:58, SELF, v:1, k:poo@motouber, rate:100, iagen:_, alone:6, study:220
+2025-10-27 23:09:16, SELF, v:1, k:poo@grafite, rate:100, iagen:__, alone:4, study:200

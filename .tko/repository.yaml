@@ -12,7 +12,7 @@ sources:
   type: remote
   branch: master
   cache_path: /workspaces/poo-dd-cd-bloco-b-mariana-dd/.tko/cache/poo.md
-  cache_timestamp: '2025-10-27 18:59:55'
+  cache_timestamp: '2025-10-27 21:23:50'
   filters: null
 expanded:
 - poo@campanha-principal
@@ -20,7 +20,8 @@ expanded:
 - poo@bloco_b-agregação-simples
 tasks:
   poo@motoca: '{rate:100, iagen:_, alone:5, study:180}'
-  poo@grafite: '{rate:100, iagen:__, alone:5, study:200}'
+  poo@grafite: '{rate:100, iagen:__, alone:4, study:200}'
+  poo@motouber: '{rate:100, iagen:_, alone:6, study:220}'
 flags:
   quests: 0
   tracks: 0
@@ -28,4 +29,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@motouber
+selected: poo@bloco_c-listas
