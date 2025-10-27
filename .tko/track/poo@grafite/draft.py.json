@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-25_19-29-17",
+            "content": "@@ -1,1803 +0,0 @@\n-class Lead:%0A    def __init__(self, thickness: float, hardness: str, size: int):%0A        self.thickness = thickness%0A        self.hardness = hardness%0A        self.size = size%0A%0A    def usaPerSheet(self) -%3E int:%0A        if self.hardness == %22HB%22:%0A            return 1%0A        elif self.hardness == %222B%22:%0A            return 2%0A        elif self.hardness == %224B%22:%0A            return 4%0A        elif self.hardness == %226B%22:%0A            return 6%0A        else:%0A            return 0%0A%0A    def __str__(self):%0A        return f%22%5B%7Bself.thickness:.1f%7D:%7Bself.hardness%7D:%7Bself.size%7D%5D%22%0A%0Aclass Pencil:%0A    def __init__(self, thickness: float):%0A        self.thickness = thickness%0A        self.tip = None%0A%0A    def hasGrafite(self) -%3E bool:%0A        return self.tip is not None%0A%0A    def insert (self, lead: Lead):%0A        if self.hasGrafite():%0A            print(%22fail: ja existe grafite%22)%0A            return%0A        if lead.thickness != self.thickness:%0A            print(%22fail: calibe incompativel%22)%0A            return%0A        self.tip = lead%0A%0A    def remote(self):%0A        if not self.hasGrafite():%0A            print(%22fail: nao existe grafite%22)%0A            return%0A        self.tip = None%0A%0A    def whitePage(self):%0A        if not self.hasGrafite():%0A            print(%22fail: nao existe grafite%22)%0A            return%0A        gasto = self.tip.usagePerSheet()%0A        if self.tip.size %3C= 10:%0A            print(%22fail: tamanho insuficiente%22)%0A            return%0A        if self.tip.size - gasto %3C 10:%0A            print(%22fail: folha incompleta%22)%0A            self.tip.size = 10%0A            return%0A        self.tip.size -= gasto%0A%0A    def __str__(self):%0A        if self.tip is None:%0A            return f%22calibre: %7Bself.thickness:.1%7D, grafite: null%22%0A        else:%0A            return f%22calibre: %7Bself.thickness:.1%7D, grafite: %7Bself.tip%7D%22%0A%0Adef main\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-26_20-59-23",
+            "content": "@@ -1800,30 +1800,4 @@\n main\n-():%0A    pencil = None%0A    \n",
+            "lines": "65"
+        },
+        {
+            "label": "2025-10-26_21-04-40",
+            "content": "@@ -1826,13 +1826,4 @@\n     \n-whil%0A    \n",
+            "lines": "67"
+        },
+        {
+            "label": "2025-10-27_19-00-01",
+            "content": "@@ -1830,259 +1830,9 @@\n whil\n-e True:%0A        try:%0A            line = input().strip()%0A            if not line:%0A                continue%0A                print(f%22$%7Bline%7D%22)%0A                parts = line.split()%0A            cmd = parts%5B0%5D%0A%0A            if cmd == %22end%22:%0A                break\n+%0A    \n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-10-27_19-14-56",
+            "content": "@@ -2085,503 +2085,4 @@\n reak\n-%0A            elif cmd == %22init%22:%0A                pencil = Pencil(float(parts%5B1%5D))%0A            elif cmd == %22show%22:%0A                print(pencil)%0A            elif cmd == %22insert%22:%0A                lead = Lead(float(parts%5B1%5D), parts%5B2%5D, int(parts%5B3%5D))%0A                pencil.insert(lead)%0A            elif cmd == %22remove%22:%0A                pencil.remove()%0A            elif cmd == %22white%22:%0A                pencil.whitePage()%0A        except EOFError:%0A            break%0A%0Aif __name__ == %22__main__%22:%0A    main()\n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-10-27_19-35-07",
+            "content": "@@ -178,18 +178,16 @@\n  def usa\n-ge\n PerSheet\n@@ -201,16 +201,16 @@\n -%3E int:%0A\n+\n         \n@@ -427,16 +427,34 @@\n eturn 6%0A\n+        else:%0A    \n         \n@@ -462,16 +462,16 @@\n eturn 0%0A\n-\n %0A    def\n@@ -556,17 +556,16 @@\n ize%7D%5D%22%0A%0A\n-%0A\n class Pe\n@@ -692,24 +692,32 @@\n rafite(self)\n+ -%3E bool\n :%0A        re\n@@ -757,16 +757,17 @@\n f insert\n+ \n (self, l\n@@ -947,17 +947,16 @@\n l: calib\n-r\n e incomp\n@@ -1020,17 +1020,17 @@\n def remo\n-v\n+t\n e(self):\n@@ -1163,17 +1163,17 @@\n    def w\n-r\n+h\n itePage(\n@@ -1617,37 +1617,32 @@\n      if \n-not \n self.\n-hasGrafite()\n+tip is None\n :%0A      \n@@ -1675,33 +1675,32 @@\n elf.thickness:.1\n-f\n %7D, grafite: null\n@@ -1701,16 +1701,34 @@\n : null%22%0A\n+        else:%0A    \n         \n@@ -1763,17 +1763,16 @@\n kness:.1\n-f\n %7D, grafi\n@@ -1788,17 +1788,16 @@\n .tip%7D%22%0A%0A\n-%0A\n def main\n@@ -1932,17 +1932,20 @@\n ontinue%0A\n-%0A\n+    \n         \n@@ -1966,16 +1966,20 @@\n line%7D%22)%0A\n+    \n         \n@@ -2457,17 +2457,17 @@\n md == %22w\n-r\n+h\n ite%22:%0A  \n@@ -2488,17 +2488,17 @@\n pencil.w\n-r\n+h\n itePage(\n@@ -2524,16 +2524,16 @@\n FError:%0A\n+\n         \n@@ -2543,17 +2543,16 @@\n  break%0A%0A\n-%0A\n if __nam\n",
+            "lines": "93"
+        },
+        {
+            "label": "2025-10-27_19-38-12",
+            "content": "class Lead:\n    def __init__(self, thickness: float, hardness: str, size: int):\n        self.thickness = thickness\n        self.hardness = hardness\n        self.size = size\n\n    def usagePerSheet(self) -> int:\n        if self.hardness == \"HB\":\n            return 1\n        elif self.hardness == \"2B\":\n            return 2\n        elif self.hardness == \"4B\":\n            return 4\n        elif self.hardness == \"6B\":\n            return 6\n        return 0\n\n    def __str__(self):\n        return f\"[{self.thickness:.1f}:{self.hardness}:{self.size}]\"\n\n\nclass Pencil:\n    def __init__(self, thickness: float):\n        self.thickness = thickness\n        self.tip = None\n\n    def hasGrafite(self):\n        return self.tip is not None\n\n    def insert(self, lead: Lead):\n        if self.hasGrafite():\n            print(\"fail: ja existe grafite\")\n            return\n        if lead.thickness != self.thickness:\n            print(\"fail: calibre incompativel\")\n            return\n        self.tip = lead\n\n    def remove(self):\n        if not self.hasGrafite():\n            print(\"fail: nao existe grafite\")\n            return\n        self.tip = None\n\n    def writePage(self):\n        if not self.hasGrafite():\n            print(\"fail: nao existe grafite\")\n            return\n        gasto = self.tip.usagePerSheet()\n        if self.tip.size <= 10:\n            print(\"fail: tamanho insuficiente\")\n            return\n        if self.tip.size - gasto < 10:\n            print(\"fail: folha incompleta\")\n            self.tip.size = 10\n            return\n        self.tip.size -= gasto\n\n    def __str__(self):\n        if not self.hasGrafite():\n            return f\"calibre: {self.thickness:.1f}, grafite: null\"\n        return f\"calibre: {self.thickness:.1f}, grafite: {self.tip}\"\n\n\ndef main():\n    pencil = None\n    while True:\n        try:\n            line = input().strip()\n            if not line:\n                continue\n\n            print(f\"${line}\")\n            parts = line.split()\n            cmd = parts[0]\n\n            if cmd == \"end\":\n                break\n            elif cmd == \"init\":\n                pencil = Pencil(float(parts[1]))\n            elif cmd == \"show\":\n                print(pencil)\n            elif cmd == \"insert\":\n                lead = Lead(float(parts[1]), parts[2], int(parts[3]))\n                pencil.insert(lead)\n            elif cmd == \"remove\":\n                pencil.remove()\n            elif cmd == \"write\":\n                pencil.writePage()\n        except EOFError:\n            break\n\n\nif __name__ == \"__main__\":\n    main()",
+            "lines": "95"
+        }
+    ]
+}

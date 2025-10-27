@@ -2,20 +2,25 @@ version: '0.2'
 sources:
 - database: local
   link: ''
+  type: local
+  branch: master
   cache_path: ''
   cache_timestamp: ''
   filters: null
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
+  type: remote
+  branch: master
   cache_path: /workspaces/poo-dd-cd-bloco-b-mariana-dd/.tko/cache/poo.md
-  cache_timestamp: '2025-10-25 19:17:27'
+  cache_timestamp: '2025-10-27 18:59:55'
   filters: null
 expanded:
 - poo@campanha-principal
 - poo@bloco_b-modificadores-de-acesso
 - poo@bloco_b-agregação-simples
 tasks:
-  poo@motoca: '{rate:100}'
+  poo@motoca: '{rate:100, iagen:_, alone:5, study:180}'
+  poo@grafite: '{rate:100, iagen:__, alone:5, study:200}'
 flags:
   quests: 0
   tracks: 0

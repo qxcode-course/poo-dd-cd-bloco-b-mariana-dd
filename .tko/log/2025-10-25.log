@@ -16,3 +16,7 @@
 2025-10-25 19:20:05, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:92
 2025-10-25 19:20:37, EXEC, v:1, k:poo@motoca, mode:FULL, rate:100, size:94
 2025-10-25 19:20:44, MOVE, v:1, k:poo@motoca, mode:BACK
+2025-10-25 19:29:01, SELF, v:1, k:poo@motoca, rate:100, iagen:_, alone:4, study:180
+2025-10-25 19:29:14, MOVE, v:1, k:poo@grafite, mode:DOWN
+2025-10-25 19:29:16, MOVE, v:1, k:poo@grafite, mode:PICK
+2025-10-25 19:29:17, EXEC, v:1, k:poo@grafite, mode:FULL, rate:0, size:0
