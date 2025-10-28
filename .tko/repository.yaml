@@ -12,7 +12,7 @@ sources:
   type: remote
   branch: master
   cache_path: /workspaces/poo-dd-cd-bloco-b-mariana-dd/.tko/cache/poo.md
-  cache_timestamp: '2025-10-28 16:11:23'
+  cache_timestamp: '2025-10-28 18:32:51'
   filters: null
 expanded:
 - poo@campanha-principal
@@ -23,6 +23,7 @@ tasks:
   poo@grafite: '{rate:100, iagen:__, alone:4, study:200}'
   poo@motouber: '{rate:100, iagen:_, alone:6, study:220}'
   poo@notebook: '{rate:100, iagen:_, alone:4, study:100}'
+  poo@charger: '{rate:90, iagen:_, alone:4}'
 flags:
   quests: 0
   tracks: 0
@@ -30,4 +31,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@notebook
+selected: poo@charger
